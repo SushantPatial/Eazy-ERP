@@ -1,1 +1,1 @@
-# Eazy-ERP
+# Eazy ERP
