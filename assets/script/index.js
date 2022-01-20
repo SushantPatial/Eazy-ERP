@@ -1,3 +1,23 @@
+(function() {
+  "use strict";
+
+  let selectHeader = select('#header')
+  if (selectHeader) {
+    const headerScrolled = () => {
+      if (window.scrollY > 100) {
+        selectHeader.classList.add('header-scrolled');
+        $("#header .logo img").attr("src", "assets/media/logo-white.png");
+      } else {
+        selectHeader.classList.remove('header-scrolled');
+        $("#header .logo img").attr("src", "assets/media/logo.png");
+      }
+    }
+    window.addEventListener('load', headerScrolled)
+    onscroll(document, headerScrolled)
+  }
+});
+
+
 /* Clients slider */
 new Swiper('.clients-slider', {
   speed: 400,

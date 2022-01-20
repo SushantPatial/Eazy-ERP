@@ -47,7 +47,7 @@
 #hero .icon-box i {
   font-size: 32px;
   line-height: 1;
-  color: var(--color-3);
+  color: var(--color-2);
   transition: ease-in-out 0.3s;
 }
 #hero .icon-box h3 {
@@ -60,8 +60,8 @@
   color: #fff;
 }
 #hero .icon-box:hover {
-  border-color: var(--color-3);
-  background-color: var(--color-3);
+  border-color: var(--color-2);
+  background-color: var(--color-2);
 }
 #hero .icon-box:hover i {
   color: #fff;
@@ -88,6 +88,69 @@
 /*--------------------------------------------------------------
 # Products
 --------------------------------------------------------------*/
+.products .row {
+  margin: 0;
+  --bs-gutter-y: 1.5rem
+}
+.products .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 10px;
+  box-shadow: 0px 5px 15px #3b3b3b71;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: .5s ease;
+}
+.products .content img {
+  width: 120px;
+  margin-top: 7px;
+  border-radius: 50%;
+  outline: 4px solid var(--color-3);
+  outline-offset: -4px;
+  transition: .5s ease;
+}
+.products .content:hover img {
+  outline: 320px solid var(--color-3);
+}
+.products .content h2 {
+  font-size: 30px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-4);
+  font-weight: 600;
+  transition: .5s ease;
+}
+.products .content p {
+  font-size: 15px;
+  text-align: center;
+  transition: .5s ease;
+}
+.products .content:hover h2, .products .content:hover p {
+  color: white;
+}
+.products .content a {
+  margin: 12px 0;
+  background: var(--color-3);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid var(--color-3);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 25px;
+  transition: .5s ease;
+}
+.products .content a:hover {
+  border-radius: 4px;
+}
+.products .content:hover a {
+  background: #fff;
+  color: var(--color-3);
+}
 
 
 /*--------------------------------------------------------------
@@ -101,9 +164,10 @@
   transition: 0.3s ease;
   filter: grayscale(100%);
 }
-.clients .swiper-slide img:hover {
+.clients .swiper:hover .swiper-slide img {
   filter: none;
   opacity: 1;
+  cursor:grab;
 }
 .clients .swiper-pagination {
   margin-top: 20px;
@@ -119,6 +183,7 @@
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-2);
 }
+
 
 /*--------------------------------------------------------------
 # Counts
@@ -151,7 +216,7 @@
   font-size: 48px;
   display: block;
   font-weight: 700;
-  color: var(--color-3);
+  color: var(--color-2);
 }
 .counts .counters p {
   padding: 0;

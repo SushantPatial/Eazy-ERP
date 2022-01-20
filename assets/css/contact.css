@@ -1,0 +1,185 @@
+.contact-hero {
+  background: url("../media/contact-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .container {
+  min-width: 100%;
+  margin-top: 100px;
+}
+
+/* contact details */
+.contact .contact-details {
+  padding: 50px 30px 50px 70px;
+  background-color: #ffffff;
+}
+.contact .contact-details .contact-item {
+  padding: 10px 0;
+}
+.contact .contact-details .contact-item > * {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: #222;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(122, 180, 255);
+  transition: 0.3s ease;
+}
+.contact .contact-details .contact-item > *:focus {
+  outline: none;
+  border-bottom: 2px solid var(--color-3);
+}
+.contact .contact-details .contact-item-half {
+  display: flex;
+}
+.contact .contact-details .contact-item-half > * {
+  width: 50%;
+}
+.contact .contact-details .contact-item-half > *:nth-child(1) {
+  margin-right: 8px;
+}
+.contact .contact-details .contact-item-half > *:nth-child(2) {
+  margin-left: 8px;
+}
+.contact .contact-details .contact-item select {
+  color: #555;
+}
+.contact .contact-details .contact-item textarea {
+  height: 120px;
+  resize: none;
+}
+.contact .contact-details .contact-item #submit {
+  border: none;
+  margin-top: 20px;
+  height: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: var(--color-6);
+}
+.contact .contact-details .contact-item #submit:hover {
+  background-color: var(--color-7);
+}
+
+.contact .contact-details input:-webkit-autofill, .contact .contact-details input:-webkit-autofill:hover,  .contact .contact-details input:-webkit-autofill:focus,  .contact .contact-details input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--color-1) inset !important;
+}
+.contact .contact-details select:-webkit-autofill, .contact .contact-details select:-webkit-autofill:hover,  .contact .contact-details select:-webkit-autofill:focus,  .contact .contact-details select:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--color-1) inset !important;
+}
+.contact .contact-details ::placeholder {
+  color: #555;
+  opacity: 1;
+}
+.contact .contact-details :-ms-input-placeholder {
+ color: #555;
+}
+.contact .contact-details ::-ms-input-placeholder {
+ color: #555;
+}
+
+/* contact info */
+.contact .contact-info {
+  width: 30%;
+  padding: 65px 20px 50px 20px;
+  background-color: #011d55;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .contact-info h2 {
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.contact .contact-info .contact-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+.contact .contact-info .contact-text h5 {
+  color: var(--color-2);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contact .contact-info .contact-text a {
+  color: #fff;
+  text-decoration: underline #011d55;
+  transition: 0.3s ease;
+}
+.contact .contact-info .contact-text a:hover {
+  text-decoration: underline var(--color-2);
+}
+
+/* contact map */
+.contact .contact-map {
+  width: 28.3%;
+  padding: 0;
+}
+.contact .contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------------------------------
+# Offices Section
+--------------------------------------------------------------*/
+.offices .row {
+  padding: 50px 0;
+}
+.offices .row-2 {
+  background-color: #fff;
+}
+.offices .office-img img {
+  width: 100%;
+}
+.offices .office-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
+  padding-left: 1.4%;
+}
+.offices .row-1:nth-child(1) .office-text {
+  padding-left: 5%;
+}
+.offices h3 {
+  font-weight: 700;
+  color: #444;
+}
+.offices h3 span {
+  color: #666;
+}
+.offices .office-item {
+  margin-top: 15px;
+}
+.offices .office-item .office-info {
+  display: flex;
+  color: #333;
+  font-weight: 500;
+}
+.offices .office-item .office-info a {
+  color: #333;
+}
+.offices .office-item .office-info i {
+  margin-top: 3px;
+  margin-right: 10px;
+  color: var(--color-4);
+}
+.offices .office-item .office-info .fa-envelope {
+  margin-top: 5px;
+}
