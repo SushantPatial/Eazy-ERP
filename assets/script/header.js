@@ -34,8 +34,10 @@
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled');
+        $("#header .logo img").attr("src", "assets/media/logo-white.png");
       } else {
         selectHeader.classList.remove('header-scrolled');
+        $("#header .logo img").attr("src", "assets/media/logo.png");
       }
     }
     window.addEventListener('load', headerScrolled)
