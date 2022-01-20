@@ -1,0 +1,10 @@
+.hero {
+  background-image: url("../media/life-hero.png");
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    background-position-x: 55%;
+  }
+}

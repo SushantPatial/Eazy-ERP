@@ -86,87 +86,16 @@
 }
 
 /*--------------------------------------------------------------
-# Products
---------------------------------------------------------------*/
-.products .row {
-  margin: 0;
-  --bs-gutter-y: 1.5rem
-}
-.products .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px 10px;
-  box-shadow: 0px 5px 15px #3b3b3b71;
-  border-radius: 4px;
-  overflow: hidden;
-  transition: .5s ease;
-}
-.products .content img {
-  width: 120px;
-  margin-top: 7px;
-  border-radius: 50%;
-  outline: 4px solid var(--color-3);
-  outline-offset: -4px;
-  transition: .5s ease;
-}
-.products .content:hover img {
-  outline: 320px solid var(--color-3);
-}
-.products .content h2 {
-  font-size: 30px;
-  margin: 16px 0;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--color-4);
-  font-weight: 600;
-  transition: .5s ease;
-}
-.products .content p {
-  font-size: 15px;
-  text-align: center;
-  transition: .5s ease;
-}
-.products .content:hover h2, .products .content:hover p {
-  color: white;
-}
-.products .content a {
-  margin: 12px 0;
-  background: var(--color-3);
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 2px solid var(--color-3);
-  font-size: 14px;
-  font-weight: 700;
-  padding: 12px 20px;
-  border-radius: 25px;
-  transition: .5s ease;
-}
-.products .content a:hover {
-  border-radius: 4px;
-}
-.products .content:hover a {
-  background: #fff;
-  color: var(--color-3);
-}
-
-
-/*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
 .clients {
   padding-top: 50px;
 }
 .clients .swiper-slide img {
-  opacity: 0.7;
-  transition: 0.3s ease;
-  filter: grayscale(100%);
+  transition: 0.2s ease;
 }
-.clients .swiper:hover .swiper-slide img {
-  filter: none;
-  opacity: 1;
+.clients .swiper-slide:hover img {
+  transform: scale(1.08);
   cursor:grab;
 }
 .clients .swiper-pagination {
@@ -184,49 +113,270 @@
   background-color: var(--color-2);
 }
 
-
 /*--------------------------------------------------------------
-# Counts
+# Products
 --------------------------------------------------------------*/
-.counts {
-  background: url("../media/counts-bg.jpg") center center no-repeat;
-  background-size: cover;
-  padding: 80px 0 60px 0;
-  position: relative;
+.products .row {
+  margin: 0;
+  --bs-gutter-y: 1.5rem
 }
-.counts::before {
-  content: "";
+.products .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px 10px;
+  box-shadow: 0px 5px 15px #3b3b3b71;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  cursor: default;
+  transition: .5s ease;
+}
+.products .content .service-img {
+  width: 100px;
+  margin-top: 7px;
+  padding: 22px;
+  border-radius: 50%;
+  outline: 4px solid var(--color-3);
+  outline-offset: -4px;
+  transition: .5s ease;
+}
+.products .content .service-img  img {
+  width: 100%;
+  filter: invert(9%) sepia(23%) saturate(4252%) hue-rotate(197deg) brightness(96%) contrast(109%);
+}
+.products .content:hover .service-img {
+  outline: 200px solid var(--color-4);
+}
+.products .content h5 {
+  font-size: 17px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #333;
+  font-weight: 600;
+  transition: .3s ease;
+}
+.products .content:hover h5, .products .content:hover p {
+  color: white;
+}
+
+/* --------------------
+    Stats Section 
+-------------------- */
+.counts #stats-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+}
+.counts .sec-1 {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counts .years {
+  font-size: 350px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.counts .text-img {
+  position: relative;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to bottom right, var(--color-5), var(--color-3));
+  -webkit-background-clip: text;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.counts #particles-js {
   position: absolute;
-  background: rgba(17, 17, 17, 0.9);
-  left: 0;
-  right: 0;
+  width: 410px;
+  height: 380px;
   top: 0;
-  bottom: 0;
+  left: 0;
 }
-.counts .title {
+.counts .particles-js-canvas-el {
   position: relative;
-  color: #fff;
-  margin-bottom: 40px;
+  top: -15px;
+  left: 5%;
 }
-.counts .title h3 {
-  font-size: 36px;
+.counts .experience {
+  width: 60%;
+}
+.counts .experience h2 {
+  border-left: 5px solid rgb(177, 177, 177);
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.counts .experience h6 {
+  font-size: 15px;
+  color: rgb(95, 95, 95);
+}
+
+.counts #stats-box .sec-2 {
+  width: 40%;
+  display: flex;
+	justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.counts .sec-2 h5 {
+  margin: 0;
+}
+.counts .stats {
+  width: 40%;
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 35px;
   font-weight: 700;
 }
-.counts .counters span {
-  font-size: 48px;
+.counts .stats .fas {
+  color: var(--color-4);
+  font-size: 50px;
+}
+.counts .counter-flex {
+  display: flex;
+  flex-direction: row;
+}
+.counts .button {
+  margin: 0 auto;
   display: block;
-  font-weight: 700;
-  color: var(--color-2);
+  margin-top: 20px;
+  cursor: pointer;
+  background: #e7e7e7;
+  border: none;
+  padding: 1.2rem 3rem;
+  font-family: inherit;
+  position: relative;
 }
-.counts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  color: #fff;
+.counts .button::before, .button::after {
+  position: absolute;
+  top: 0;
+  height: 100%;
 }
-@media (min-width: 1200px) {
-  .counts {
-    background-attachment: fixed;
+.counts .button--mimas {
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	font-weight: 700;
+	font-size: 0.85rem;
+	overflow: hidden;
+	color: #fff;
+}
+.counts .button--mimas span {
+	position: relative;
+	mix-blend-mode: difference;
+}
+.counts .button--mimas::before {
+	content: '';
+	background: rgb(20, 20, 20);
+	width: 120%;
+	left: -10%;
+	transform: skew(30deg);
+	transition: transform 0.4s ease;
+}
+.counts .button--mimas:hover::before {
+	transform: translate3d(100%,0,0);
+}
+
+@media screen and (max-width: 1000px) {
+  .counts #stats-box {
+    height: 100%;
+    flex-direction: column;
+  }
+  .counts #stats-box .sec-1 {
+    width: 100%;
+    height: 400px;
+    margin-right: 50px;
+  }
+  .counts #stats-box .sec-2 {
+    width: 80%;
+    align-items: normal;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .counts .stats {
+   margin: 0%;
+   width: 100%;
+  }
+  .counts .particles-js-canvas-el {
+    left: 15%
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .counts #stats-box .years {
+    font-size: 300px;
+  }
+  .counts .experience {
+    width: 100%;
+  }
+  .counts #particles-js {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+  }
+  .counts .particles-js-canvas-el {
+    left: 2%;
+  }
+  .counts .experience h2 {
+    font-size: 30px !important;
+  }
+  .counts .experience h6 {
+    font-size: 15px;
+  }
+  .counts .button {
+    padding: 1.2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .counts #stats-box {
+    margin: 0px;
+  }
+  .counts #stats-box .years {
+    font-size: 140px;
+  }
+  .counts .experience h2 {
+    font-size: 22px !important;
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+  .counts .experience h6 {
+    font-size: 14px;
+    display: none;
+  }
+  .counts #particles-js {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  }
+  .counts .button {
+    padding: 0.8rem 1rem;
+    margin: 0;
+  }
+  .counts .button--mimas {
+    font-size: 10px;
+  }
+  .counts .stats {
+    margin-top: -70px;
+    font-size: 18px;
+  }
+  .counts .stats .fas {
+    color: var(--color-4);
+    font-size: 30px;
+  }
+  .counts .sec-2 h5 {
+    font-size: 14px;
   }
 }

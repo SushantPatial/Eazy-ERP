@@ -16,7 +16,6 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   color: #555;
-  text-align: justify;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
@@ -85,6 +84,9 @@ section {
   z-index: 1000;
   padding: 15px 0;
   transition: 0.3s;
+}
+#header.header-top {
+  background: #0010317e;
 }
 #header.header-scrolled {
   background: #001031ee;
@@ -305,13 +307,13 @@ section {
 --------------------------------------------------------------*/
 .hero {
   height: 400px;
-}
-.hero .row {
-  height: 110%;
-  margin-left: 10%;
+  display: flex;
   align-items: center;
 }
-.hero .row h1 {
+.hero h1 {
+  font-size: 46px;
+  margin-left: 10%;
+  margin-top: 50px;
   font-weight: 700;
   color: #fff;
 }
@@ -319,10 +321,8 @@ section {
   .hero {
     background-position-x: 55%;
   }
-  .hero .row {
-    margin-left: 5%;
-  }
-  .hero .row h1 {
-    font-size: 24px;
+  .hero h1 {
+    margin-left: 7%;
+    font-size: 30px;
   }
 }

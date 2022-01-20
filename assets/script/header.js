@@ -34,10 +34,10 @@
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled');
-        $("#header .logo img").attr("src", "assets/media/logo-white.png");
+        $(".header .logo img").attr("src", "assets/media/logo-white.png");
       } else {
         selectHeader.classList.remove('header-scrolled');
-        $("#header .logo img").attr("src", "assets/media/logo.png");
+        $(".header .logo img").attr("src", "assets/media/logo.png");
       }
     }
     window.addEventListener('load', headerScrolled)
@@ -78,7 +78,6 @@
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      once: true,
       mirror: false
     });
   });
