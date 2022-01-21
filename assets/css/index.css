@@ -3,46 +3,45 @@
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background: url("../media/hero-bg.jpg") top center;
-  background-size: cover;
+  height: 100%;
+  background: #000625;
+  color: #fff;
   position: relative;
-}
-#hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 #hero .container {
+  padding-top: 75px;
+}
+#hero .row .hero-left {
+  margin-top: 65px;
+}
+#hero .row .hero-left img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+#hero .row .hero-left h1 {
   position: relative;
-  padding-top: 74px;
-  text-align: center;
+  z-index: 1;
 }
-#hero h1 {
-  margin: 0;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 64px;
-  color: #fff;
+#hero .row .hero-left h5 {
+  position: relative;
+  z-index: 1;
 }
-#hero h1 span {
-  color: var(--color-3);
+#hero .row .hero-right img {
+  width: 800px;
+  position: relative;
+  z-index: 10;
 }
-#hero h2 {
-  color: rgba(255, 255, 255, 0.9);
-  margin: 10px 0 0 0;
-  font-size: 24px;
-}
+
 #hero .icon-box {
   padding: 30px 20px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #000c25a8;
   height: 100%;
   text-align: center;
-  transition: ease-in-out 0.3s;
+  cursor: default;
+  position: relative;
+  z-index: 1;
+  transition: ease 0.3s;
 }
 #hero .icon-box i {
   font-size: 32px;
@@ -50,38 +49,67 @@
   color: var(--color-2);
   transition: ease-in-out 0.3s;
 }
-#hero .icon-box h3 {
-  font-weight: 700;
-  margin: 10px 0 0 0;
-  padding: 0;
-  line-height: 1;
-  font-size: 20px;
+#hero .icon-box h6 {
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
   line-height: 26px;
   color: #fff;
 }
 #hero .icon-box:hover {
   border-color: var(--color-2);
-  background-color: var(--color-2);
+  background-color: var(--color-5);
 }
 #hero .icon-box:hover i {
   color: #fff;
 }
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
+
+#hero .hero-particles {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 -50px 100px rgb(1, 1, 27);
+  background-color: rgb(1, 1, 27);
+}
+#hero .particles {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media (max-width: 992px) {
+  #hero .container {
+    padding-top: 20px;
+  }
+  #hero .row .hero-left {
+    margin-top: 65px;
+    padding: 0 10%;
+  }
+  #hero .row .hero-right img {
+    width: 100%;
+    margin: 50px 0;
+  }
+  #hero .hero-particles {
+    top: 65%;
   }
 }
 @media (max-width: 768px) {
-  #hero {
-    height: auto;
+  #hero .row .hero-left img {
+    width: 120px;
   }
-  #hero h1 {
+  #hero .row .hero-left h1 {
     font-size: 28px;
-    line-height: 36px;
   }
-  #hero h2 {
-    font-size: 20px;
-    line-height: 24px;
+  #hero .row .hero-left h5 {
+    font-size: 17px;
   }
 }
 
