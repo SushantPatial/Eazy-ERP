@@ -8,3 +8,253 @@
     background-position-x: 55%;
   }
 }
+
+/* --------------------
+    Life at Eazy Section 
+-------------------- */
+.portfolio {
+  overflow: hidden;
+  margin: 40px 0;
+  width: 100%;
+}
+.portfolio .container {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+.portfolio .portfolio-item {
+  transform:translate3d(0,0,0);
+  -webkit-transform:translate3d(0,0,0);
+  -moz-transform:translate3d(0,0,0);
+}
+.portfolio .col-6 {
+  padding: 0;
+}
+.portfolio .portfolio-item h3 {
+  background-color: var(--color-5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  font-family: 'Poppins', sans-serif;
+}
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin: 0 5px 5px 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: var(--color-6);
+}
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(1) .portfolio-wrap {
+  border-right: 1px solid var(--color-2);
+  border-bottom: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(2) .portfolio-wrap {
+  border-left: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(5) .portfolio-wrap {
+  border-top: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(8) .portfolio-wrap {
+  border-right: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(9) .portfolio-wrap {
+  border-left: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(13) .portfolio-wrap {
+  border-right: 1px solid var(--color-2);
+  border-bottom: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(14) .portfolio-wrap {
+  border-left: 1px solid var(--color-2);
+  border-bottom: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(17) .portfolio-wrap {
+  border-right: 1px solid var(--color-2);
+  border-top: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(18) .portfolio-wrap {
+  border-left: 1px solid var(--color-2);
+  border-top: 1px solid var(--color-2);
+}
+.portfolio .portfolio-wrap::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+.portfolio .portfolio-wrap img {
+  width: 100%;
+  transition: all ease-in-out 0.3s;
+}
+.portfolio .toggler {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.portfolio .toggler .icon {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 70px;
+  transition: 0.8s ease;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.03);
+}
+.portfolio .toggler:hover .icon {
+  opacity: 1;
+  transform: translateY(-50px);
+}
+
+@media screen and (max-width: 1050px) {
+  .portfolio .toggler .icon {
+    width: 50px;
+    transform: translateY(80px);
+  }
+  .portfolio .toggler:hover .icon {
+    transform: translateY(-30px);
+  }
+}
+@media screen and (max-width: 750px) {
+  .portfolio .toggler .icon {
+    width: 35px;
+    transform: translateY(70px);
+  }
+  .portfolio .toggler:hover .icon {
+    transform: translateY(-20px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .portfolio .toggler .icon {
+    width: 25px;
+    transform: translateY(50px);
+  }
+  .portfolio .toggler:hover .icon {
+    transform: translateY(-10px);
+  }
+}
+@media screen and (max-width: 350px) {
+  .portfolio .toggler .icon {
+    width: 17px;
+    transform: translateY(40px);
+  }
+  .portfolio .toggler:hover .icon {
+    transform: translateY(-7px);
+  }
+}
+
+.portfolio .col-12 {
+  background-color:#222;
+  padding: 10px;
+}
+.window-resize {
+  transform:translate3d(0,0,0) !important;
+  -webkit-transform:translate3d(0,0,0) !important;
+  -moz-transform:translate3d(0,0,0) !important;
+}
+.masonry {
+  display: none;
+  left: 0 !important;
+}
+.masonry p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 8px 0;
+}
+.masonry p i {
+  color: #bbb;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.masonry p i:hover {
+  color: #fff;
+}
+.masonry img {
+  height: auto;
+  width: 100%;
+  filter: brightness(80%);
+  transition: 0.3s ease;
+}
+.masonry img:hover {
+  filter: brightness(100%);
+  transform: scale(1.05);
+}
+.masonry .overflow-hidden {
+  overflow: hidden;
+  width: 100%;
+}
+
+.masonry .grid2 {
+  column-count: 2;
+  column-gap: 0px;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+}
+.masonry .grid3 {
+  column-count: 3;
+  column-gap: 0px;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  display: flex;
+}
+.masonry .grid4 {
+  column-count: 4;
+  column-gap: 0px;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  display: flex;
+}
+.masonry .grid4-wrap {
+  column-count: 4;
+  column-gap: 0px;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.masonry .grid4-wrap a {
+ width: 50%;
+}

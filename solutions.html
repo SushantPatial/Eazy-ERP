@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <!-- CSS -->
     <link href="assets/css/header.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
@@ -38,6 +40,7 @@
             <li><a class="nav-link" href="index.html">Home</a></li>
             <li><a class="nav-link" href="about.html">About</a></li>
             <li><a class="nav-link active" href="#">Solutions</a></li>
+            <li><a class="nav-link" href="clients.html">Clients</a></li>
             <li><a class="nav-link" href="life.html">Life@Eazy</a></li>
             <li><a class="nav-link" href="resources.html">Resources</a></li>
            <!-- <li class="dropdown"><a href=""><span>Drop Down</span> <i class="far fa-angle-down" style="margin-top: 4px;"></i></a>
@@ -74,6 +77,98 @@
 
     <main id="main">
 
+      <section class="modules-section">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#eazy-erp-lite" type="button" role="tab" aria-controls="eazy-erp-lite" aria-selected="true">
+              <div class="nav-link-icon">
+                <i class="fas fa-lock-alt"></i>
+              </div>
+              <div class="nav-link-text">
+                Eazy ERP <em><sub>LITE</sub></em>
+              </div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#eazy-erp-pro" type="button" role="tab" aria-controls="eazy-erp-pro" aria-selected="false">
+              <div class="nav-link-icon">
+                <i class="fas fa-lock-open-alt"></i>
+              </div>
+              <div class="nav-link-text">
+                Eazy ERP <em><sub>PRO</sub></em>
+              </div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#add-ons" type="button" role="tab" aria-controls="add-ons" aria-selected="false">
+              <div class="nav-link-icon">
+                <i class="fas fa-puzzle-piece"></i>
+              </div>
+              <div class="nav-link-text">
+                Add-ons
+              </div>
+            </button>
+          </li>
+        </ul>
+        
+        <div class="tab-content">
+
+          <div class="tab-pane fade show active" id="eazy-erp-lite" role="tabpanel" aria-labelledby="eazy-erp-lite-tab">
+
+            <div class="swiper-container swiper-lite">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Store</div>
+                <div class="swiper-slide">Sales</div>
+                <div class="swiper-slide">Purchase</div>
+                <div class="swiper-slide">Quality</div>
+                <div class="swiper-slide">Tally Integration</div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade show" id="eazy-erp-pro" role="tabpanel" aria-labelledby="eazy-erp-pro-tab">
+
+            <div class="swiper-container swiper-pro">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Store</div>
+                <div class="swiper-slide">Sales</div>
+                <div class="swiper-slide">Purchase</div>
+                <div class="swiper-slide">Advance Quality</div>
+                <div class="swiper-slide">Tally Integration</div>
+                <div class="swiper-slide">Production (WIP)</div>
+                <div class="swiper-slide">GST Register</div>
+                <div class="swiper-slide">Job Work (O/S & I/S)</div>
+                <div class="swiper-slide">MRP - I</div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            
+          </div>
+
+          <div class="tab-pane fade show" id="add-ons" role="tabpanel" aria-labelledby="add-ons-tab">
+
+            <div class="swiper-container swiper-addons">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Fixed Asset Management</div>
+                <div class="swiper-slide">Plant Maintenance</div>
+                <div class="swiper-slide">CRM</div>
+                <div class="swiper-slide">Rack Management</div>
+                <div class="swiper-slide">Web Report (Mobile App)</div>
+                <div class="swiper-slide">Customer Order App</div>
+                <div class="swiper-slide">Scheme Management</div>
+                <div class="swiper-slide">Payroll</div>
+                <div class="swiper-slide">Cloud Hosting</div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
       
 
     </main>
@@ -109,7 +204,7 @@
                 <div class="footer-text">
                   <a href="tel:+91 12 4479 4479">+91 12 4479 4479</a>
                 </div>
-              </div>
+              </div><br>
 
               <div class="footer-detail" style="margin-top: 0;">
                 <div class="footer-icon">
@@ -188,6 +283,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- Script -->
     <script src="assets/script/header.js"></script>
     <script src="assets/script/footer.js"></script>

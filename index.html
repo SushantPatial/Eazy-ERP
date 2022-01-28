@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- CSS -->
     <link href="assets/css/header.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
@@ -40,6 +42,7 @@
             <li><a class="nav-link active" href="#">Home</a></li>
             <li><a class="nav-link" href="about.html">About</a></li>
             <li><a class="nav-link" href="solutions.html">Solutions</a></li>
+            <li><a class="nav-link" href="clients.html">Clients</a></li>
             <li><a class="nav-link" href="life.html">Life@Eazy</a></li>
             <li><a class="nav-link" href="resources.html">Resources</a></li>
            <!-- <li class="dropdown"><a href=""><span>Drop Down</span> <i class="far fa-angle-down" style="margin-top: 4px;"></i></a>
@@ -75,69 +78,89 @@
 
         <div class="row">
           <div class="col-lg-6 hero-left">
-            <img src="assets/media/logo-white.png">
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
-            <h5>First <span id="typed"></span> Integrated ERP</h5>
+            <img src="assets/media/logo-white.png" data-aos="fade-in" data-aos-delay="0">
+            <h3 data-aos="fade-right" data-aos-delay="300">An ERP that talks to your <span id="typed"></span></h3>
           </div>
           <div class="col-lg-6 hero-right">
             <img src="assets/media/hero-bg.png">
           </div>
         </div>
 
-        <div class="row gy-4 mt-3 justify-content-center">
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <i class="fal fa-store"></i>
-              <h6>UI/UX DESIGN</h6>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <i class="fal fa-boxes"></i>
-              <h6>UI/UX DESIGN</h6>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <i class="fal fa-calendar-check"></i>
-              <h6>UI/UX DESIGN</h6>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <i class="fal fa-clipboard-list"></i>
-              <h6>UI/UX DESIGN</h6>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <i class="fal fa-clock"></i>
-              <h6>UI/UX DESIGN</h6>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <i class="fal fa-map-marked-alt"></i>
-              <h6>UI/UX DESIGN</h6>
-            </div>
-          </div>
-        </div>
-
       </div>
 
       <div class="hero-particles">
-        <div id="particles-js-hero-1" class="particles"></div>
-        <div id="particles-js-hero-2" class="particles"></div>
-        <div id="particles-js-hero-3" class="particles"></div>
-        <div id="particles-js-hero-4" class="particles"></div>
+        <div id="particles-js-hero" class="particles"></div>
       </div>
 
     </section><!-- End Hero -->
 
     <main id="main">
 
-       <!-- ======= Clients Section ======= -->
-       <section id="clients" class="clients" data-aos="fade-up" data-aos-duration="1000">
+      <section class="usps-section">
+        <div class="section-heading">
+          <h2>USPs</h2>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-3" data-aos="fade-up" data-aos-delay="0">
+              <div class="icon-box">
+                <i class="fal fa-store"></i>
+                <h6>Tally/Busy Integration</h6>
+              </div>
+            </div>
+            <div class="col-xl-3" data-aos="fade-up" data-aos-delay="50">
+              <div class="icon-box">
+                <i class="fal fa-boxes"></i>
+                <h6>Hybrid Model (Available on Cloud & Prem)</h6>
+              </div>
+            </div>
+            <div class="col-xl-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box">
+                <i class="fal fa-calendar-check"></i>
+                <h6>Unlimited Use License</h6>
+              </div>
+            </div>
+            <div class="col-xl-3" data-aos="fade-up" data-aos-delay="150">
+              <div class="icon-box">
+                <i class="fal fa-clipboard-list"></i>
+                <h6>Excel like reporting</h6>
+              </div>
+            </div>
+            <div class="col-xl-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box">
+                <i class="fal fa-clock"></i>
+                <h6>Open source database</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Video Section ======= -->
+      <div class="video-section">
+
+        <div class="video-top">
+          <div class="container">
+            <div class="headlines">
+              <h3>Parallax Effect Video Design</h3>
+              <p>Work on all major devices</p>
+              </div>
+              <h3>Lorem Ipsum Dolor</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+            </div>
+        </div>
+
+        <div class="parallax-video">
+          <video autoplay muted loop>
+            <source src="assets/media/video.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+      </div>
+
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients">
 
         <div class="container">
 
@@ -159,15 +182,15 @@
       </section><!-- End Clients Section -->
 
       <!-- ======= Products Section ======= -->
-      <section class="products section-bg" data-aos="fade-up" data-aos-duration="1000">
-        <div class="section-heading">
+      <section class="products section-bg">
+        <div class="section-heading" data-aos="fade-up">
           <h2>Expertise in</h2>
         </div>
 
         <div class="container">
           <div class="services row">
 
-            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="col-lg-3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
               <div class="content">
                 <div class="service-img">
                   <img src="assets/media/icons/industry/food.png">
@@ -176,7 +199,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+            <div class="col-lg-3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
               <div class="content">
                 <div class="service-img">
                   <img src="assets/media/icons/industry/electric.png">
@@ -185,25 +208,25 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+            <div class="col-lg-3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
               <div class="content">
                 <div class="service-img">
-                  <img src="assets/media/icons/industry/garment.png">
+                  <img src="assets/media/icons/industry/auto.png">
                 </div>
-                <h5>Garment</h5>
+                <h5>Auto Components</h5>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
+            <div class="col-lg-3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
               <div class="content">
                 <div class="service-img">
-                  <img src="assets/media/icons/industry/packaging.png">
+                  <img src="assets/media/icons/industry/apparel.png">
                 </div>
-                <h5>Packaging</h5>
+                <h5>Apparel & Footwear</h5>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="col-lg-3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
               <div class="content">
                 <div class="service-img">
                   <img src="assets/media/icons/industry/paint.png">
@@ -211,98 +234,222 @@
                 <h5>Paint & Chemicals</h5>
               </div>
             </div>
-
-            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
-              <div class="content">
-                <div class="service-img">
-                  <img src="assets/media/icons/industry/furniture.png">
-                </div>
-                <h5>Furniture</h5>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-              <div class="content">
-                <div class="service-img">
-                  <img src="assets/media/icons/industry/cosmetic.png">
-                </div>
-                <h5>Cosmetic</h5>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
-              <div class="content">
-                <div class="service-img">
-                  <img src="assets/media/icons/industry/engineering.png">
-                </div>
-                <h5>Other</h5>
-              </div>
-            </div>
-
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-              <div class="content">
-                <img src="assets/media/logos/erp.png">
-                <h2>EAZY ERP</h2>
-                <p>Eazy ERP helps manufacturing companies streamline their operations by automating the workflow of all...</p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
-              <div class="content">
-                <img src="assets/media/logos/erp.png">
-                <h2>EAZY DMS</h2>
-                <p>Eazy DMS is a distributor management software for tracking Secondary Sales, up-to end level, helping...</p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-              <div class="content">
-                <img src="assets/media/logos/erp.png">
-                <h2>EAZY CRM</h2>
-                <p>Eazy CRM provides businesses with the tools necessary to improve customer relations and identify marketing...</p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-              <div class="content">
-                <img src="assets/media/logos/erp.png">
-                <h2>EAZY ASSET</h2>
-                <p>Many organizations face a significant challenge to track the location, quantity, condition, maintenance...</p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
-              <div class="content">
-                <img src="assets/media/logos/erp.png">
-                <h2>EAZY PAY</h2>
-                <p>Eazy PAY maximizes the potential of HR and Accounts by capturing more than 100 credentials of a single...</p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-              <div class="content">
-                <img src="assets/media/logos/erp.png">
-                <h2>EAZY SFA</h2>
-                <p>Eazy SFA lets you effectively monitor your sales staff performance at all hierarchy levels through mobile...</p>
-                <a href="#">Read More</a>
-              </div>
-            </div>         --> 
   
           </div>
         </div>
       </section>
 
 
+      <!-- Testimonials -->
+      <section class="testimonials-2">
+        <div class="section-heading" data-aos="fade-up">
+          <h2>Know from different distributors too!</h2>
+        </div>
+
+        <div class="container">
+          <div class="testimonials-carousel owl-carousel" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="item first prev">
+              <div class="card">
+                <div class="card-top">
+                  <div class="row">
+                    <div class="col-5">
+                      <img class="profile-pic" src="assets/media/testimonials/Pratyush.png" data-toggle="modal" data-target="#testimonial-videos">
+                    </div>
+                    <div class="col-7">
+                      <div class="row">
+                        <div class="col-10">
+                          <h5>Pratyush</h5>
+                          <h6>Sr. Sales Strategy Manager</h6>
+                        </div>
+                        <div class="col-2">
+                          <i class="fad fa-quote-right"></i>
+                        </div>
+                      </div>
+                      <div class="row company-logo">
+                        <div class="company-logo-wrapper">
+                          <img src="assets/media/customers/kenstar.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim sed do eiusmod tempor dolore.</p>
+                </div>
+                <div class="card-bottom">
+                  <div class="stars">
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  </div>
+                  <div class="sign">
+                      <img src="assets/media/testimonials/Pratyush Signature.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item show">
+              <div class="card">
+                <div class="card-top">
+                  <div class="row">
+                    <div class="col-5">
+                      <img class="profile-pic" src="assets/media/testimonials/Amit (1).png" data-toggle="modal" data-target="#testimonial-videos">
+                    </div>
+                    <div class="col-7">
+                      <div class="row">
+                        <div class="col-10">
+                          <h5>Amit Singha</h5>
+                          <h6>Digital Transformation Team Head</h6>
+                        </div>
+                        <div class="col-2">
+                          <i class="fad fa-quote-right"></i>
+                        </div>
+                      </div>
+                      <div class="row company-logo">
+                        <div class="company-logo-wrapper">
+                          <img src="assets/media/customers/weikfield.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim sed do eiusmod tempor dolore.</p>
+                </div>
+                <div class="card-bottom">
+                  <div class="stars">
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  </div>
+                  <div class="sign">
+                      <img src="assets/media/testimonials/Amit Signature.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item next">
+              <div class="card">
+                <div class="card-top">
+                  <div class="row">
+                    <div class="col-5">
+                      <img class="profile-pic" src="assets/media/testimonials/Anand.png" data-toggle="modal" data-target="#testimonial-videos">
+                    </div>
+                    <div class="col-7">
+                      <div class="row">
+                        <div class="col-10">
+                          <h5>Anand</h5>
+                          <h6>IT Head</h6>
+                        </div>
+                        <div class="col-2">
+                          <i class="fad fa-quote-right"></i>
+                        </div>
+                      </div>
+                      <div class="row company-logo">
+                        <div class="company-logo-wrapper">
+                          <img src="assets/media/customers/merino.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim sed do eiusmod tempor dolore.</p>
+                </div>
+                <div class="card-bottom">
+                  <div class="stars">
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  </div>
+                  <div class="sign">
+                      <img src="assets/media/testimonials/Anand Signature.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item last">
+              <div class="card">
+                <div class="card-top">
+                  <div class="row">
+                    <div class="col-5">
+                      <img class="profile-pic" src="assets/media/testimonials/Sameer.png" data-toggle="modal" data-target="#testimonial-videos">
+                    </div>
+                    <div class="col-7">
+                      <div class="row">
+                        <div class="col-10">
+                          <h5>Sameer Chaudhary</h5>
+                          <h6>Retail Director</h6>
+                        </div>
+                        <div class="col-2">
+                          <i class="fad fa-quote-right"></i>
+                        </div>
+                      </div>
+                      <div class="row company-logo">
+                        <div class="company-logo-wrapper">
+                          <img src="assets/media/customers/schneider-electric.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim sed do eiusmod tempor dolore.</p>
+                </div>
+                <div class="card-bottom">
+                  <div class="stars">
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  </div>
+                  <div class="sign">
+                      <img src="assets/media/testimonials/Sameer Signature.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+<!--              <div class="modal fade bd-example-modal-lg" id="testimonial-videos" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="swiper swiper-3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <h5>Amit Singha <span>|</span> Weikfield</h5>
+                      <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                      <h5>Anand <span>|</span> Merino</h5>
+                      <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                      <h5>Sameer Chaudhary <span>|</span> Schneider Electric</h5>
+                      <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                      <h5>Pratyush <span>|</span> Kenstar</h5>
+                      <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"><i class="fas fa-caret-square-right"></i></div>
+                  <div class="swiper-button-prev"><i class="fas fa-caret-square-left"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>--> 
+
+      </section>
 
       <!-- ======= Counts Section ======= -->
       <section id="counts" class="counts">
     
-        <div id="stats-box">
+        <div id="stats-box" data-aos="fade-up">
 
           <div class="sec-1">
             <div class="text-img">
@@ -356,6 +503,94 @@
 
       </section><!-- End Counts Section -->
 
+
+      <!-- ======= Blogs Section ======= -->
+      <section class="blog section-bg">
+        <div class="section-heading" data-aos="fade-up">
+          <h2>Our Latest Blogs</h2>
+        </div>
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+              <div class="blog-d">
+                <div class="part-img">
+                  <img src="assets/media/blogs/right-approach.jpg" alt="img-1">
+                </div>
+                <div class="part-txt">
+                  <div class="date">
+                    <h6>Apr</h6>
+                    <p>2020</p>
+                  </div>
+                  <div class="text">
+                    <h3>Right Approach To DMS</h3>
+                    <p>With the ever changing market dynamics, businesses are evolving every minute to stay relevant. In an increasingly competitive environment, having a solution... </p>
+                    <a href="#">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="blog-d">
+                <div class="part-img">
+                  <img src="assets/media/blogs/dms-crm.jpg" alt="img-2">
+                </div>
+                <div class="part-txt">
+                  <div class="date">
+                    <h6>Nov</h6>
+                    <p>2019</p>
+                  </div>
+                  <div class="text">
+                    <h3>Enhance the Power of Distributor Management Software with CRM Integration</h3>
+                    <p>Distributor Management System (DMS) has become an integral part of...</p>
+                    <a href="#">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="blog-d">
+                <div class="part-img">
+                  <img src="assets/media/blogs/how-fmcg.png" alt="img-3">
+                </div>
+                <div class="part-txt">
+                  <div class="date">
+                    <h6>June</h6>
+                    <p>2019</p>
+                  </div>
+                  <div class="text">
+                    <h3>How Technology is Steering the FMCG Sector</h3>
+                    <p>Over the recent years, we have witnessed a marked increase in the entry of new players in F&B and consumer...</p>
+                    <a href="#">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section><!-- Blogs Section -->
+
+      <!-- ======= Parallax Section ======= -->
+      <div class="particles-section">
+      
+        <div id="parallax">
+          <h1>Be Different. Be Unique. Be Eazy.</h1>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aspernatur architecto eos.</h5>
+          <button>Know More<i class="fas fa-chevron-right"></i></button>
+                
+          <div data-depth="0.4" class="layer" style="z-index: 10;">
+            <div id="particles-js-2">
+              <canvas class="particles-js-canvas-el" width='1500'></canvas>
+            </div>
+          </div>
+          <div data-depth="0.3" class="layer"></div>
+        </div>
+      </div>
+
     </main>
 
 
@@ -389,7 +624,7 @@
                 <div class="footer-text">
                   <a href="tel:+91 12 4479 4479">+91 12 4479 4479</a>
                 </div>
-              </div>
+              </div><br>
 
               <div class="footer-detail" style="margin-top: 0;">
                 <div class="footer-icon">
@@ -470,10 +705,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Swiper -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Purecounter -->
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <!-- Particles -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Parallax -->
+    <script src="https://matthew.wagerfield.com/parallax/deploy/jquery.parallax.js"></script>
     <!--Typed -->
     <script src="assets/script/typed.min.js"></script>
     <!-- Script -->

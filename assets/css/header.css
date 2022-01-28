@@ -1,11 +1,11 @@
 :root {
-  --color-1: #F5F8FA;
+  --color-1: #022853;
   --color-2: #169be7;
-  --color-3: #0072bb;
-  --color-4: #0a407e;
+  --color-3: #01629e;
+  --color-4: #07376d;
   --color-5: #001031;
   --color-6: #ED1C24;
-  --color-7: #9B0000;
+  --color-7: #a50c11;
   --color-8: #6D0000;
 }
 
@@ -30,6 +30,7 @@ a {
 section {
   padding: 60px 0;
   overflow: hidden;
+  background-color: #fff;
 }
 .section-90 {
   margin: 0 auto;
@@ -107,10 +108,10 @@ section {
   font-size: 14px;
   display: inline-block;
   text-transform: uppercase;
-  border: 2px solid var(--color-2);
+  border: 2px solid var(--color-6);
 }
 .get-started-btn:hover {
-  background: var(--color-2);
+  background: var(--color-6);
   color: #fff;
 }
 @media (max-width: 992px) {
