@@ -50,8 +50,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  font-family: "Raleway", sans-serif;
-  color: var(--color-4);
+
 }
 .section-heading h2::before {
   content: "";
