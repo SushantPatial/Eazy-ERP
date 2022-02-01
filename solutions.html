@@ -43,23 +43,6 @@
             <li><a class="nav-link" href="clients.html">Clients</a></li>
             <li><a class="nav-link" href="life.html">Life@Eazy</a></li>
             <li><a class="nav-link" href="resources.html">Resources</a></li>
-           <!-- <li class="dropdown"><a href=""><span>Drop Down</span> <i class="far fa-angle-down" style="margin-top: 4px;"></i></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="far fa-angle-right"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li>-->
             <li><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
           <i class="fal fa-bars mobile-nav-toggle"></i>
@@ -77,11 +60,11 @@
 
     <main id="main">
 
-      <section class="modules-section">
+      <section id="modules" class="modules-section">
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#eazy-erp-lite" type="button" role="tab" aria-controls="eazy-erp-lite" aria-selected="true">
+            <button id="eazy-erp-lite-btn" class="nav-link active" data-bs-toggle="tab" data-bs-target="#eazy-erp-lite" type="button" role="tab" aria-controls="eazy-erp-lite" aria-selected="true">
               <div class="nav-link-icon">
                 <i class="fas fa-lock-alt"></i>
               </div>
@@ -91,7 +74,7 @@
             </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#eazy-erp-pro" type="button" role="tab" aria-controls="eazy-erp-pro" aria-selected="false">
+            <button id="eazy-erp-pro-btn" class="nav-link" data-bs-toggle="tab" data-bs-target="#eazy-erp-pro" type="button" role="tab" aria-controls="eazy-erp-pro" aria-selected="false">
               <div class="nav-link-icon">
                 <i class="fas fa-lock-open-alt"></i>
               </div>
@@ -101,7 +84,7 @@
             </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#add-ons" type="button" role="tab" aria-controls="add-ons" aria-selected="false">
+            <button id="add-ons-btn" class="nav-link" data-bs-toggle="tab" data-bs-target="#add-ons" type="button" role="tab" aria-controls="add-ons" aria-selected="false">
               <div class="nav-link-icon">
                 <i class="fas fa-puzzle-piece"></i>
               </div>
@@ -112,17 +95,64 @@
           </li>
         </ul>
         
+        
         <div class="tab-content">
 
           <div class="tab-pane fade show active" id="eazy-erp-lite" role="tabpanel" aria-labelledby="eazy-erp-lite-tab">
 
             <div class="swiper-container swiper-lite">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">Store</div>
-                <div class="swiper-slide">Sales</div>
-                <div class="swiper-slide">Purchase</div>
-                <div class="swiper-slide">Quality</div>
-                <div class="swiper-slide">Tally Integration</div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Eazy ERP Store & Inventory</h1>
+                    <h5>Automate your inventory, define criteria and set priorities</h5>
+                    <div class="circle-loader">
+                      <a href="modules/tally-integration.html"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Sales</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/tally-integration.html"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Purchase</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/tally-integration.html"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>EazyERP Quality Control</h1>
+                    <h5>An integrated platform for easy end-to-end monitoring, reviewing, and maintaining maximum compliance</h5>
+                    <div class="circle-loader">
+                      <a href="modules/tally-integration.html"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Tally Integration</h1>
+                    <h5>Explore the benefits of 100% data synchronization with the country’s first Tally integrated ERP</h5>
+                    <div class="circle-loader">
+                      <a href="modules/tally-integration.html"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -133,15 +163,97 @@
 
             <div class="swiper-container swiper-pro">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">Store</div>
-                <div class="swiper-slide">Sales</div>
-                <div class="swiper-slide">Purchase</div>
-                <div class="swiper-slide">Advance Quality</div>
-                <div class="swiper-slide">Tally Integration</div>
-                <div class="swiper-slide">Production (WIP)</div>
-                <div class="swiper-slide">GST Register</div>
-                <div class="swiper-slide">Job Work (O/S & I/S)</div>
-                <div class="swiper-slide">MRP - I</div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Eazy ERP Store & Inventory</h1>
+                    <h5>Automate your inventory, define criteria and set priorities</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Sales</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Purchase</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>EazyERP Quality Control</h1>
+                    <h5>An integrated platform for easy end-to-end monitoring, reviewing, and maintaining maximum compliance</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Tally Integration</h1>
+                    <h5>Explore the benefits of 100% data synchronization with the country’s first Tally integrated ERP</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Production</h1>
+                    <h5>Automate your inventory, define criteria and set priorities</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>GST Registration</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Job Work (O/S & I/S)</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>MRP - I</h1>
+                    <h5>An integrated platform for easy end-to-end monitoring, reviewing, and maintaining maximum compliance</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -152,15 +264,97 @@
 
             <div class="swiper-container swiper-addons">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">Fixed Asset Management</div>
-                <div class="swiper-slide">Plant Maintenance</div>
-                <div class="swiper-slide">CRM</div>
-                <div class="swiper-slide">Rack Management</div>
-                <div class="swiper-slide">Web Report (Mobile App)</div>
-                <div class="swiper-slide">Customer Order App</div>
-                <div class="swiper-slide">Scheme Management</div>
-                <div class="swiper-slide">Payroll</div>
-                <div class="swiper-slide">Cloud Hosting</div>
+                
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Fixed Asset Management</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Plant Maintenance</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>CRM</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Rack Management</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Web Report (Mobile App)</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Customer Order App</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Scheme Management</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+ 
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Payroll</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="container">
+                    <h1>Cloud Hosting</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint quia quidem qui vitae!</h5>
+                    <div class="circle-loader">
+                      <a href="modules/"><i class="far fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -169,7 +363,6 @@
         </div>
 
       </section>
-      
 
     </main>
 
@@ -285,6 +478,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Swiper -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Progress Bar -->
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
     <!-- Script -->
     <script src="assets/script/header.js"></script>
     <script src="assets/script/footer.js"></script>
@@ -292,3 +487,5 @@
 
   </body>
 </html>
+
+

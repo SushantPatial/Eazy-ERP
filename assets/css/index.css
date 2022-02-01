@@ -180,7 +180,10 @@
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  padding-top: 50px;
+  padding-top: 60px;
+}
+.clients .clients-slider {
+  height: 120px;
 }
 .clients .swiper-slide img {
   transition: 0.2s ease;
@@ -190,7 +193,7 @@
   cursor:grab;
 }
 .clients .swiper-pagination {
-  margin-top: 20px;
+  margin-top: -10px;
   position: relative;
 }
 .clients .swiper-pagination .swiper-pagination-bullet {
