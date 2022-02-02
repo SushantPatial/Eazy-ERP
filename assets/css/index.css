@@ -357,7 +357,7 @@
   width: 70%; */
 } 
 .testimonials-2 .card .card-top .company-logo .company-logo-wrapper img {
-  width: 130px;
+  width: 50%;
   position: absolute;
   bottom: 0;
 }
@@ -413,7 +413,7 @@
     margin-right: -15px;
   }
   .testimonials-2 .card .card-top .company-logo img {
-    width: 100px;
+    width: 40% !important;
   }
   .testimonials-2 .card .card-top .fa-quote-right {
     margin-top: -5px;
@@ -429,7 +429,7 @@
   .testimonials-2 .card .card-top .col-7 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .testimonials-2 .card .card-top h5 {
     font-size: 24px;
@@ -456,6 +456,7 @@
   }
   .testimonials-2 .card .card-top .company-logo img {
     width: 140px;
+    bottom: -20px !important;
   }
 }
 @media screen and (max-width: 500px) {
@@ -479,25 +480,27 @@
     margin-bottom: 10px;
   }
   .testimonials-2 .card .card-top h5 {
-    font-size: 15px;
-    margin-left: 20px;
+    font-size: 17px;
+    margin-left: 10px;
     margin-top: 10px;
   }
   .testimonials-2 .card .card-top h6 {
-    font-size: 12px;
-    margin-left: 20px;
+    font-size: 14px;
+    margin-left: 10px;
   }
   .testimonials-2 .card .card-top .fa-quote-right {
     font-size: 22px;
     float: right;
-    margin-top: 0px;
+    margin-top: 10px;
   }
   .testimonials-2 .card .card-top .company-logo img {
-    width: 120px;
+    position: relative !important;
+    bottom: 0 !important;
+    width: 35% !important;
     margin-left: 15px;
   }
   .testimonials-2 .card .card-body p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .testimonials-2 .card .card-bottom .stars {
     font-size: 15px;
@@ -881,11 +884,11 @@ z-index: 1;
 -------------------------------------------------------------- */
 .blog .blog-d {
   padding-bottom: 25px;
-  background: var(--color-5);
+  background: #f8f8f8;
   -webkit-box-shadow: 0px 3px 10px 2px rgb(0 0 0 / 20%);
   box-shadow: 0px 3px 10px 2px rgb(0 0 0 / 20%);
   border-radius: 10px;
-  margin: 0px 5px 20px 5px;
+  margin: 0px 5px 30px 5px;
   overflow: hidden;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -978,14 +981,11 @@ z-index: 1;
   line-height: 30px;
   font-weight: 700;
   text-transform: capitalize;
-  color: #EFF3FC;
+  color: #333;
   margin-bottom: 15px;
 }
-.blog .blog-d .part-txt h3 {
-  color: #EFF3FC;
-}
 .blog .blog-d .part-txt .text p {
-  color: #ccc;
+  color: #555;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -994,7 +994,7 @@ z-index: 1;
 .blog .blog-d .part-txt a {
   font-size: 16px;
   font-weight: 500;
-  color: #EFF3FC;
+  color: var(--color-3);
   text-transform: capitalize;
   text-decoration: underline;
 }
@@ -1021,12 +1021,17 @@ z-index: 1;
     bottom: 26px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .blog .blog-d .part-txt:before {
-    height: 76%;
+    height: 70%;
   }
   .blog .blog-d .part-txt:after {
     bottom: 27px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog .blog-d .part-txt:before {
+    height: 76%;
   }
 }
 @media screen and (max-width: 400px) {
@@ -1034,7 +1039,7 @@ z-index: 1;
     height: 78%;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
   .blog .blog-d .part-txt:before {
     height: 83%;
   }
