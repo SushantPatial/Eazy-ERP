@@ -1,13 +1,11 @@
 /*===== Client heading hover =====*/
 $('.clients-heading').on('mouseenter', function() {
   $('.custom-cursor').css({
-    'background-color': '#169be7',
     transform: 'translate(-35%, -35%) scale(3)'
   })
 })
 $('.clients-heading').on('mouseleave', function() {
   $('.custom-cursor').css({
-    'background-color': 'transparent',
     transform: 'translate(-35%, -35%) scale(1)'
   })
 })
