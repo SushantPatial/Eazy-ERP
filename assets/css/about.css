@@ -10,6 +10,159 @@
 }
 
 /*=========================
+ # What We Do
+=========================*/
+.what-we-do {
+  background-color: var(--color-5);
+}
+.what-we-do .section-heading h2 {
+  color: #eee;
+}
+.what-we-do .text-center {
+  color: #ddd;
+}
+.what-we-do .shadow {
+  box-shadow: 0 3px 15px #01629ea9 !important;
+}
+
+.what-we-do .nav-pills-custom .nav-link {
+  color: #888;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  padding-top: 17px !important;
+  height: 60px;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.what-we-do .nav-pills-custom .nav-link.active {
+  color: var(--color-4);
+  background: #fff;
+}
+@media (min-width: 992px) {
+  .what-we-do .nav-pills-custom .nav-link::before {
+    content: '';
+    display: block;
+    border-top: 8px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+.what-we-do .nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+}
+
+.what-we-do .tab-pane {
+  padding: 30px 40px;
+  height: 288px;
+}
+.what-we-do .tab-pane h4 {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-4);
+}
+.what-we-do .tab-pane p {
+  color: #444;
+}
+
+@media (max-width: 992px) {
+  .what-we-do .tab-pane {
+    height: 100%;
+  }
+}
+
+/*=========================
+ # Journey
+=========================*/
+.journey {
+
+}
+.journey .row {
+  position: relative;
+}
+#line {
+  position: absolute;
+  right: 50%;
+  transform: scaleY(0);
+  width: 1px;
+  height: 100vh;
+  background: #333;
+}
+
+.journey .left-side {
+  background-image: url('../media/journey.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  right: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  color: #fff;
+}
+.journey .right-side.panels {
+  background-color: var(--color-3);
+  position: absolute;
+  left: 100%;
+  z-index: 10;
+}
+.journey .row > * {
+  padding: 0;
+}
+
+
+.journey .row .col-lg-4 {
+  position: relative;
+}
+
+.journey .panels {
+  position:absolute;
+  overflow:hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.journey .panels .panel {
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.journey .panel:nth-child(1) {
+  background-color: var(--color-3);
+}
+.journey .panel:nth-child(2) {
+  background-color: var(--color-2);
+}
+.journey .panel:nth-child(3) {
+  background-color: var(--color-3);
+}
+.journey .panel:nth-child(4) {
+  background-color: var(--color-2);
+}
+.journey .panel:nth-child(5) {
+  background-color: var(--color-3);
+}
+
+/*=========================
  # Team
 =========================*/
 .team .team-card {
