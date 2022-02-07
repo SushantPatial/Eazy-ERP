@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
     <!-- CSS -->
     <link href="assets/css/header.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
@@ -150,38 +153,75 @@
         </div>
       </section>
 
-      
 
-      <div class="journey section-bg">
-        <div class="sections">
+      <!-- <div class="journey section-bg" id="main-scrollbar">
+
+        <div class="module">
+          <div class="panels">
+            <div class="description panel blue">
+              <div>
+                <h1>Layered pinning</h1>
+                <p>Use pinning to layer panels on top of each other as you scroll.</p>
+                <div class="scroll-down">Scroll down<div class="arrow"></div></div>
+              </div>
+            </div>
+            
+            <div class="panel red">
+              ONE
+            </div>
+            <div class="panel orange">
+              TWO
+            </div>
+            <div class="panel purple">
+              THREE
+            </div>
+            <div class="panel green">
+              FOUR
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="sections">
           <div class="module">
             <div class="row">
 
               <div class="col-lg-8">
                 <div class="left-side">
-                  <h2>This side should remain static while the right side slides in each panel on scroll.</h2>
-                  <p>This section can repeat more than once on the same page, so we need to create an array of sections that animate the same way.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis, voluptatibus iure incidunt cum quae fugiat nulla, pariatur velit esse ad. Impedit natus soluta reprehenderit, quae doloremque ut voluptatibus numquam.</p>
+                  <div class="panel-1">
+                    ONE
+                  </div>
+                  <div class="panel-1">
+                    TWO
+                  </div>
+                  <div class="panel-1">
+                    THREE
+                  </div>
+                  <div class="panel-1">
+                    FOUR
+                  </div>
+                  <div class="panel-1">
+                    FIVE
+                  </div>
                 </div>
               </div>  
 
               <div id="line"></div>
 
               <div class="col-lg-4">
-                <div class="right-side panels">
-                  <div class="panel panel-1">
+                <div class="right-side">
+                  <div class="panel-2">
                     ONE
                   </div>
-                  <div class="panel panel-2">
+                  <div class="panel-2">
                     TWO
                   </div>
-                  <div class="panel panel-3">
+                  <div class="panel-2">
                     THREE
                   </div>
-                  <div class="panel panel-4">
+                  <div class="panel-2">
                     FOUR
                   </div>
-                  <div class="panel panel-5">
+                  <div class="panel-2">
                     FIVE
                   </div>
                 </div>
@@ -189,7 +229,7 @@
 
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <section class="team">
@@ -380,6 +420,51 @@
       </section>
       
 
+      <div class="split-slideshow">
+        <div class="slideshow">
+          <div class="slider">
+            <div class="item">
+              <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg" />
+            </div>
+            <div class="item">
+              <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg" />
+            </div>
+            <div class="item">
+              <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-4.jpg" />
+            </div>
+            <div class="item">
+              <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="slideshow-text">
+          <div class="item">
+            <h6>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, illo, cum voluptas accusantium autem explicabo, porro animi placeat ipsa magni blanditiis dignissimos laborum necessitatibus quibusdam? Impedit eum veniam alias nostrum?
+            </h6>
+            <div class="date">2017</div>
+          </div>
+          <div class="item">
+            <h6>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, illo, cum voluptas accusantium autem explicabo, porro animi placeat ipsa magni blanditiis dignissimos laborum necessitatibus quibusdam? Impedit eum veniam alias nostrum?
+            </h6>
+            <div class="date">2018</div>
+          </div>
+          <div class="item">
+            <h6>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, illo, cum voluptas accusantium autem explicabo, porro animi placeat ipsa magni blanditiis dignissimos laborum necessitatibus quibusdam? Impedit eum veniam alias nostrum?
+            </h6>
+            <div class="date">2019</div>
+          </div>
+          <div class="item">
+            <h6>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, illo, cum voluptas accusantium autem explicabo, porro animi placeat ipsa magni blanditiis dignissimos laborum necessitatibus quibusdam? Impedit eum veniam alias nostrum?
+            </h6>
+            <div class="date">2020</div>
+          </div>
+        </div>
+      </div>
+      
     </main>
 
 
@@ -492,9 +577,13 @@
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- GSAP -->
-    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <!-- ScrollTrigger -->
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <!-- Script -->
     <script src="assets/script/header.js"></script>
     <script src="assets/script/footer.js"></script>
