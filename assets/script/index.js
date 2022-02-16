@@ -22,9 +22,9 @@ $(window).on("scroll", function() {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".video", {
+gsap.to(".video-main", {
   scrollTrigger: {
-    trigger: ".video",
+    trigger: ".video-main",
     scrub: true,
     pin: true,
     start: "center center",
@@ -34,9 +34,9 @@ gsap.to(".video", {
   }
 });
 
-gsap.to(".video__video", {
+gsap.to(".video", {
   scrollTrigger: {
-    trigger: ".video",
+    trigger: ".video-main",
     scrub: 0.5,
     start: "top bottom",
     end: "bottom -300%",
@@ -45,13 +45,6 @@ gsap.to(".video__video", {
   y: "-30%"
 });
 
-
-// $(document).ready(function() {
-//   $(".parallax-video").css("height", $(".parallax-video video").css("height"));
-// })
-// $(window).on("resize", function() {
-//   $(".parallax-video").css("height", $(".parallax-video video").css("height"));
-// })
 
 /* Clients slider */
 new Swiper('.clients-slider', {

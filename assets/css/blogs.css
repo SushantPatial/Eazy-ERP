@@ -152,6 +152,42 @@
   height: 100%;
   filter: brightness(40%);
 }
+.how-to-calculate-roi-hero {
+  overflow: hidden;
+  position: relative;
+}
+.how-to-calculate-roi-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../media/blogs/how-to-calculate-roi.png);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+.erp-for-food-hero {
+  overflow: hidden;
+  position: relative;
+}
+.erp-for-food-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../media/blogs/erp-for-food.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
 .how-technology-hero {
   overflow: hidden;
   position: relative;
@@ -188,6 +224,24 @@
   height: 100%;
   filter: brightness(40%);
 }
+.why-tally-integration-erp-hero {
+  overflow: hidden;
+  position: relative;
+}
+.why-tally-integration-erp-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../media/blogs/why-tally-integration-erp.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
 .benefits-onsite-hero {
   overflow: hidden;
   position: relative;
@@ -200,6 +254,24 @@
   z-index: -1;
   display: block;
   background-image: url(../media/blogs/benefits-onsite.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+.erp-cost-savings-hero {
+  overflow: hidden;
+  position: relative;
+}
+.erp-cost-savings-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../media/blogs/ERP-cost-saving.jpg);
   background-size:cover;
   background-position: center;
   width: 100%;
@@ -242,6 +314,60 @@
   height: 100%;
   filter: brightness(40%);
 }
+.erp-evaluation-tips-hero {
+  overflow: hidden;
+  position: relative;
+}
+.erp-evaluation-tips-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../media/blogs/ERP-evaluation-tips.png);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+.tally-vs-ordinary-hero {
+  overflow: hidden;
+  position: relative;
+}
+.tally-vs-ordinary-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../media/blogs/tally-vs-ordinary.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+.benefits-asset-hero {
+  overflow: hidden;
+  position: relative;
+}
+.benefits-asset-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../media/blogs/benefits-asset.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
 .usps-of-eazy-sfa-hero {
   overflow: hidden;
   position: relative;
@@ -260,6 +386,42 @@
   height: 100%;
   filter: brightness(40%);
 }
+.tip-more-erp-hero {
+  overflow: hidden;
+  position: relative;
+}
+.tip-more-erp-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../media/blogs/tip-more-erp.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+.switch-to-crm-hero {
+  overflow: hidden;
+  position: relative;
+}
+.switch-to-crm-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../media/blogs/switch-to-crm.png);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
 .why-do-fmcg-fmcd-hero {
   overflow: hidden;
   position: relative;
@@ -272,6 +434,24 @@
   z-index: -1;
   display: block;
   background-image: url(../media/blogs/Why-Do-FMCG-FMCD.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+.erp-implementation-hero {
+  overflow: hidden;
+  position: relative;
+}
+.erp-implementation-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../media/blogs/erp-implementation.jpg);
   background-size:cover;
   background-position: center;
   width: 100%;
